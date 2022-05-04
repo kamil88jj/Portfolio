@@ -8,6 +8,23 @@
     flex-direction: column;
     justify-content: space-between;
     height: 340px;
+    &__link {
+        &:hover {
+            svg path{
+                fill: rgb(57, 15, 108);
+            }
+        }
+            &:hover {
+                position: relative;
+                color: #fff;
+                transition: all 0.5s;
+                box-shadow: 1px 1px 15px 25px rgba(105, 0, 234, 0.33);
+                text-decoration: none;
+                border: none;
+                z-index: -1;
+                border-radius: 100%;
+            }
+    }
     &__meta {
         display: block;
         height: 23px;
