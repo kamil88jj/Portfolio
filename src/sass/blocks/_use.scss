@@ -1,0 +1,48 @@
+.use {
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        padding: 60px 10px 0 10px;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-gap: 13px;
+    }
+    &__skills {
+        position: relative;
+        width: 270px;
+        height: 270px;
+        border: 1px solid #000000;
+        img {
+            margin: 30px 0 0 30px;
+        }
+    }
+    &__header {
+        position: relative;
+        margin: 20px 0 0 30px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__body {
+        position: relative;
+        margin: 15px 30px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+}
