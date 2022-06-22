@@ -1,3 +1,21 @@
+.btn2{
+    height: 45px;
+    width: 219px;
+    font-size: 16px;
+    font-family: cursive;
+    background: $main-color;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 12px 22px;
+    border: 1px;
+    border-radius: 3%;
+    &:hover {
+        transition: 0.5s all;
+        background:rgb(159, 55, 239);
+        padding: 12px 20px;
+        font-size: 16.3px;
+    }
+}
+
 
 .btn{
     position: relative;
