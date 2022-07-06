@@ -152,7 +152,12 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/main_photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main_photo.jpg">
+                        <source type="image/webp" srcset="img/main_photo.webp">
+                        <img src="img/main_photo.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
@@ -378,7 +383,7 @@
         </div>
     </section>
 
-<!--     <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -464,7 +469,7 @@
                         <a href="#" class="contacts__link">
                             <img src="icons/social/meta.svg" alt="meta">
                         </a>
-                        <a href="https://tele.click/{}"{} class="contacts__link">
+                        <a href="https://tele.click/{}" class="contacts__link">
                             <img src="icons/social/telegram.svg" alt="telegram">
                         </a>
                         <a href="#" class="contacts__link">
@@ -500,7 +505,7 @@
             </div>
         </div>
     </section>
- -->
+
     <script src="js/script.js"></script>
 </body>
 </html>
